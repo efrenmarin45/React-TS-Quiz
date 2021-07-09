@@ -10,7 +10,7 @@ export type Question = {
     type: string,
 }
 
-export type QuestionStatus = Question & { answers: string[]};
+export type QuestionState = Question & { answers: string[]};
 
 export enum Difficulty {
     EASY = "easy",
@@ -24,7 +24,7 @@ export const fetchQuizQuestions = async (amount: number, difficulty: Difficulty)
     return data.results.map((question: Question) => (
         {
             ...question, 
-            answer: shuffleArr([...question.incorrect_answers, question.correct_answer])
+            answers: shuffleArr([...question.incorrect_answers, question.correct_answer]),
         }
     ));
 }
