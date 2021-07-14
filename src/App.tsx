@@ -16,6 +16,8 @@ export type AnswerObject = {
 
 const spinStyle = css`
 	display: block;
+  margin-top: 100px;
+  margin-right: 80px;
 `;
 
 const App = () => {
@@ -81,14 +83,15 @@ const App = () => {
     <>
     <GlobalStyle />
 		<Wrapper>
-			<h1>React TS Quiz</h1>
+			<h1>Video Game Quiz</h1>
 			{gameOver || userAnswers.length === TOTAL_QUESTIONS ? (
 				<button className="start" onClick={startQuiz}>
 					Start
 				</button>
 			) : null}
 			{!gameOver ? <p className="score">Score: {score}</p> : null}
-			{loading && <PacmanLoader css={spinStyle} color="blue" loading />}
+			{loading && <PacmanLoader css={spinStyle} size={35} color="#35E6DB" loading />}
+      {loading && <p className="loadingText">Loading</p>}
 			{!loading && !gameOver && (
 				<QuestionCard
 					questionNum={number + 1}

@@ -1,4 +1,3 @@
-import QuestionCard from "./components/QuestionCard";
 import { shuffleArr } from "./utils";
 
 export type Question = {
