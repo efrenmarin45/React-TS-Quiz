@@ -16,8 +16,8 @@ export type AnswerObject = {
 
 const spinStyle = css`
 	display: block;
-  margin-top: 100px;
-  margin-right: 80px;
+  	margin-top: 100px;
+  	margin-right: 80px;
 `;
 
 const App = () => {

@@ -84,7 +84,7 @@ export const Wrapper = styled.div`
 		max-width: 200px;
 		font-size: 1.3rem;
 		-webkit-animation-name: start; /* Safari 4.0 - 8.0 */
-		-webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+		-webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
 		animation-name: start;
 		animation-duration: 1s;
 		animation-iteration-count: infinite;
@@ -122,6 +122,11 @@ export const Wrapper = styled.div`
 
 		.start{
 			background-color: #038951;
+			-webkit-animation-name: start; /* Safari 4.0 - 8.0 */
+			-webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+			animation-name: start;
+			animation-duration: 4s;
+			margin: 150px 0;
 		}
 
 		/* Safari 4.0 - 8.0 */
