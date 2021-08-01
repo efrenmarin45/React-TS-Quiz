@@ -1,5 +1,6 @@
 import styled, { createGlobalStyle } from "styled-components";
 import BGImage from "./img/BGImage1.jpg";
+import { device } from "./device";
 
 export const GlobalStyle = createGlobalStyle`
     html{
@@ -19,6 +20,18 @@ export const GlobalStyle = createGlobalStyle`
         box-sizing: border-box;
         font-family: 'Catamaran', sans-serif;
     }
+
+	@media (max-width: 980px){
+		body{
+			background-image: none;
+			background: rgb(125,254,255);
+			background: linear-gradient(145deg, rgba(125,254,255,1) 0%, rgba(219,83,225,1) 100%);
+		}
+	}
+
+	@media ${device.laptop}{
+		max-width: 800px;
+	}
 `;
 
 export const Wrapper = styled.div`
@@ -79,4 +92,6 @@ export const Wrapper = styled.div`
 		margin-top: 50px;
 		text-shadow: 2px 2px black;
 	}
+
+	
 `;
