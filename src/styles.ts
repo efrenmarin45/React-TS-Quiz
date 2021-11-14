@@ -67,7 +67,8 @@ export const Wrapper = styled.div`
 	}
 
 	.start,
-	.next {
+	.next,
+	.tryAgain {
 		cursor: pointer;
 		border: 2px solid #fff;
 		box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.35);
@@ -88,6 +89,21 @@ export const Wrapper = styled.div`
 		animation-name: start;
 		animation-duration: 1s;
 		animation-iteration-count: infinite;
+	}
+
+	.tryAgain {
+		margin-top: 100px;
+		max-width: 200px;
+		font-size: 1.3rem;
+		-webkit-animation-name: start; /* Safari 4.0 - 8.0 */
+		-webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
+		animation-name: start;
+		animation-duration: 1s;
+		animation-iteration-count: infinite;
+	}
+
+	.hidden{
+		display: none;
 	}
 
 	/* Safari 4.0 - 8.0 */

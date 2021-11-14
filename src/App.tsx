@@ -42,7 +42,7 @@ const App = () => {
 			setScore(0);
 			setUserAnswers([]);
 			setNumber(0);
-			setTimeout(() => setLoading(false), 4000);
+			setTimeout(() => setLoading(false), 3000);
 		} catch (err) {
 			console.log("Oops, looks like I caught an error: ", err);
 		}
