@@ -142,7 +142,6 @@ export const Wrapper = styled.div`
 			-webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
 			animation-name: start;
 			animation-duration: 4s;
-			margin: 150px 0;
 		}
 
 		/* Safari 4.0 - 8.0 */
